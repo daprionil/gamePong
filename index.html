@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Pelota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>AIMLAB</h1>
+        </div>
+        <div class="ctn-header">
+            <div class="text-header">
+                <p id="puntos">0 / 30 Puntos</p>
+                <p id="tiempo">30/30 Tiempo(seg)</p>
+            </div>
+        </div>
+        <div class="game">
+            <div class="ball-game" id="pelota"></div>
+        </div>
+    </div>
+    <div class="boton-restar">
+        <button id="iniciarJuego" class="iniciar-juego">Empezar a Jugar</button>
+        <button id="restarJuego" class="restar-juego">Reiniciar Juego</button>
+        <div id="resultado" class="resultadoGanador"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

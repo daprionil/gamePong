@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #b9b9b9;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px 0;
+    width: 100vw;
+    height: 100vh;
+    .container{
+        width: 500px;
+        border: 2px solid white;
+        .title{
+            background: crimson;
+            text-align: center;
+            h1{
+                padding: 5px;
+            }
+        }
+        .ctn-header{
+            border: 2px solid rgb(0, 0, 0);
+            width: 100%;
+            padding: 10px;
+            background: rgb(255, 255, 255);
+            .text-header{
+                display: grid;
+                grid-template-columns:50% 50%;
+                gap: 0 5px;
+                p{
+                    padding:10px;
+                    border-radius: 10px;
+                    box-shadow: 1px 1px 0 white;
+                    &:nth-child(1){
+                        background: rgb(0, 140, 255);
+                    }
+                    &:nth-child(2){
+                        background: rgb(255, 0, 0);
+                    }
+                }
+            }
+        }
+        .game{
+            border: 2px solid rgb(0, 0, 0);
+            background: rgb(29, 146, 255);
+            height: 500px;
+            .ball-game{
+                transition: all .3s;
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                background: red;
+                border-radius: 50%;
+                box-shadow: 1px 1px 0 black;
+            }
+        }
+    }
+    .boton-restar{
+        button{
+            font-size: 1.5rem;
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover{
+                transform: translateX(-5px),translateY(-5px);
+                box-shadow:3px 3px 0 white;
+            }
+        }
+        .iniciar-juego{            
+            background: rgb(255, 0, 0);
+        }
+        .restar-juego{
+            background: rgb(0, 140, 255);
+        }
+        .resultadoGanador{
+            margin-top: 5px;
+            padding:10px;
+            border-radius: 10px;
+            text-align: center;
+            animation: animationFadeIn;
+            animation-timing-function: linear;
+            animation-duration: 1000ms;
+            @keyframes animationFadeIn {
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+        }
+        .resultadoGanador.perdio{
+            background: crimson;
+            box-shadow: 1px 1px 0 white,0 0 2px rgb(0, 0, 0);
+        }
+        .resultadoGanador.gano{
+            background: rgb(60, 220, 20);
+            box-shadow: 1px 1px 0 white,0 0 2px rgb(0, 0, 0);
+        }
+    }
+}

@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #b9b9b9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body .container {
+  width: 500px;
+  border: 2px solid white;
+}
+
+body .container .title {
+  background: crimson;
+  text-align: center;
+}
+
+body .container .title h1 {
+  padding: 5px;
+}
+
+body .container .ctn-header {
+  border: 2px solid black;
+  width: 100%;
+  padding: 10px;
+  background: white;
+}
+
+body .container .ctn-header .text-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  gap: 0 5px;
+}
+
+body .container .ctn-header .text-header p {
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 0 white;
+          box-shadow: 1px 1px 0 white;
+}
+
+body .container .ctn-header .text-header p:nth-child(1) {
+  background: #008cff;
+}
+
+body .container .ctn-header .text-header p:nth-child(2) {
+  background: red;
+}
+
+body .container .game {
+  border: 2px solid black;
+  background: #1d92ff;
+  height: 500px;
+}
+
+body .container .game .ball-game {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: red;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 0 black;
+          box-shadow: 1px 1px 0 black;
+}
+
+body .boton-restar button {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+body .boton-restar button:hover {
+  -webkit-transform: translateX(-5px), translateY(-5px);
+          transform: translateX(-5px), translateY(-5px);
+  -webkit-box-shadow: 3px 3px 0 white;
+          box-shadow: 3px 3px 0 white;
+}
+
+body .boton-restar .iniciar-juego {
+  background: red;
+}
+
+body .boton-restar .restar-juego {
+  background: #008cff;
+}
+
+body .boton-restar .resultadoGanador {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-animation: animationFadeIn;
+          animation: animationFadeIn;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+}
+
+@-webkit-keyframes animationFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animationFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body .boton-restar .resultadoGanador.perdio {
+  background: crimson;
+  -webkit-box-shadow: 1px 1px 0 white, 0 0 2px black;
+          box-shadow: 1px 1px 0 white, 0 0 2px black;
+}
+
+body .boton-restar .resultadoGanador.gano {
+  background: #3cdc14;
+  -webkit-box-shadow: 1px 1px 0 white, 0 0 2px black;
+          box-shadow: 1px 1px 0 white, 0 0 2px black;
+}
+/*# sourceMappingURL=style.css.map */
